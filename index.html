@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <!--
-       Lleyton Seymour
+        <!-- 
 
-       October 9th, 2020
+        Name:   Lleyton Seymour
+        Date:   Apr. 2021
+        File:   index.html
+        Notes:  'Still under construction' 
 
-       index.html
+        -->
 
-       "please excuse our appearance while we're under construction"  
-    -->
         <title> Lleyton Seymour </title>
+        
+        <!-- Resources -->
+        <link rel="stylesheet" href="styles/styles.css">
+        
     </head>
     
     <body>
@@ -68,7 +72,7 @@
 
 
 
-        <!-- Start of JavaScript -->
+        <!-- Start of embedded JavaScript -->
             <!-- Title Randomizer Function -->
             <script>
                 var choices = ['🔧', '🚧', '🤠', '🇦🇺', '📎', '🗑', '🔨', '🌎', '💫', '🎓', '🎨'
@@ -77,40 +81,7 @@
                 document.title = title;
             </script>
 
-            <!-- Time Update Function -->
-            <script>
-                function addZero(i) { //for single digit minutes
-                    if (i < 10) {
-                        i = "0" + i;
-                    }
-                    return i;
-                }
+            <script src="timeUpdate.js"></script>
 
-                function updateClock() {
-                    var date = new Date();
-                    var hours = date.getHours();
-                    var hours = (hours+24)%24; 
-                    var mins = addZero(date.getMinutes());
-                    var mid='AM';
-                    
-                    if(hours==0) { //exception case for 12:00 AM
-                        hours=12;
-                    }
-                    else if(hours>12){
-                        hours=hours%12;
-                        mid='PM';
-                    }
-                   
-                    //formatting string for display
-                    var time =  ''.concat('<b> Today </b>', hours, ":", mins, ' ', mid);
-                    document.getElementById('Time').innerHTML = time;
-                    
-
-                    //call function every 10 seconds
-                    setTimeout(updateClock, 10000);
-                }
-                updateClock();
-            </script>
-            
     </body>
 </html>

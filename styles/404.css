@@ -1,0 +1,75 @@
+/*
+
+    Name:   Lleyton Seymour
+    Date:   Apr. 2021
+    File:   404.css
+    Notes:  'its messy i know, i am going to fix it soon
+            just wanted to get a password page live' 
+
+*/
+body {
+    font-family: 'Coming Soon', cursive;
+    overflow: hidden;
+    margin: 0;
+}
+
+div {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    padding-left: 25.5%;
+    z-index: -1;
+}
+
+p {
+   
+    line-height: 0vw;
+}
+
+.title {
+    font-size: 4vw;
+
+}
+
+.sub {
+    font-size: 1.75vw;
+}
+
+section {
+    position: relative;
+}
+
+.oops {
+    width: 14%;
+    position: absolute;
+}
+
+@media only screen and (orientation: portrait) {
+    div {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: center;
+        padding-left: 8%;
+        z-index: -1;
+    }
+
+    .title {
+        font-size: 8vw;
+
+    }
+
+    .sub {
+        font-size: 3vw;
+    }
+
+    .oops {
+        width: 27%;
+        position: absolute;
+    }
+}
