@@ -6,3 +6,51 @@
     Notes:  'under construction' 
 
 */
+
+/*** FONTS ***/
+    @font-face {
+        font-family: 'SF-Pro-Text-Regular';
+        src: url('../resources/SF-Pro-Text-Regular.otf');
+    }
+
+    @font-face {
+        font-family: 'SF-Pro-Text-Light';
+        src: url('../resources/SF-Pro-Text-Light.otf');
+    }
+
+    @font-face {
+        font-family: 'SF-Pro-Text-Bold';
+        src: url('../resources/SF-Pro-Text-Bold.otf');
+    }
+
+    @font-face {
+        font-family: 'SF-Pro-Rounded-Bold';
+        src: url('../resources/SF-Pro-Rounded-Bold.otf');
+    }
+/***********/
+
+/*** NATIVE STYLES ***/
+    body {
+        font-family: 'SF-Pro-Text-Regular', 'Helvetica', 'Arial', sans-serif;
+        color: rgb(1, 0, 0);
+    }
+
+    b {
+        font-family: 'SF-Pro-Text-Bold', 'Helvetica', 'Arial', sans-serif;
+    }
+/***********/
+
+
+
+
+/*** ID (#) ***/
+    #Time { 
+        color: rgb(142, 142, 147);
+    }
+/***********/
+
+/*** CLASSES (.) ***/
+/***********/
+
+/*** PSEUDO-CLASSES (:) ***/
+/***********/
