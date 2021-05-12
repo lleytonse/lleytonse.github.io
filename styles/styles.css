@@ -33,10 +33,27 @@
     body {
         font-family: 'SF-Pro-Text-Regular', 'Helvetica', 'Arial', sans-serif;
         color: rgb(1, 0, 0);
+        font-size: 12px;
     }
 
     b {
         font-family: 'SF-Pro-Text-Bold', 'Helvetica', 'Arial', sans-serif;
+    }
+
+    h1 {
+        color: rgb(1, 0, 0);
+        font-size: 14px;
+    }
+
+    p {
+        max-width: 200px;
+        word-wrap: break-word;
+        margin-bottom: 6px;
+        line-height: 18px;
+        position: relative;
+	    padding: 0px;
+        border-radius: 17px;
+
     }
 /***********/
 
@@ -47,10 +64,87 @@
     #Time { 
         color: rgb(142, 142, 147);
     }
+
+    #Icon {
+        width: 80px;
+        
+    }
 /***********/
 
 /*** CLASSES (.) ***/
+
+    .Blue-Bubble {
+        color: white; 
+        background: #0B93F6;
+        align-self: flex-end;
+        padding: 4px 10px 4px 10px;
+            
+    }
+
+    .Grey-Bubble {
+        background: #E5E5EA;
+        color: black;
+        align-self: flex-start;
+        padding: 4px 10px 4px 10px;
+    }
+
+    .Convo-Section {
+	    max-width: 325px;
+	    margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Head-Section {
+        
+    }
+
+    .Page-Container {
+
+       /* max-width: 50%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; */
+    }
 /***********/
 
 /*** PSEUDO-CLASSES (:) ***/
+    p::before, p::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 25px;
+    }
+
+    .Blue-Bubble::before {
+        right: -7px;
+        width: 20px;
+        background-color: #0B93F6;
+        border-bottom-left-radius: 16px 14px;
+    }
+    
+    .Blue-Bubble::after {
+        right: -26px;
+        width: 26px;
+        background-color: white;
+        border-bottom-left-radius: 10px;
+    }
+
+    .Grey-Bubble::before {
+        left: -7px;
+        width: 20px;
+        background-color: #E5E5EA;
+        border-bottom-right-radius: 16px 14px;
+    }
+
+    .Grey-Bubble::after {
+        left: -26px;
+        width: 26px;
+        background-color: white;
+        border-bottom-right-radius: 10px;
+}
+
+
+
 /***********/
