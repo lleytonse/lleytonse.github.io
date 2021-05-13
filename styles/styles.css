@@ -42,17 +42,19 @@
 
     h1 {
         color: rgb(1, 0, 0);
-        font-size: 14px;
+        font-size: 12px;
+        margin-bottom: 20px;
     }
 
     p {
-        max-width: 200px;
+        max-width: 210px;
         word-wrap: break-word;
         margin-bottom: 6px;
         line-height: 18px;
         position: relative;
 	    padding: 0px;
         border-radius: 17px;
+
 
     }
 /***********/
@@ -73,39 +75,57 @@
 
 /*** CLASSES (.) ***/
 
-    .Blue-Bubble {
+    .Blue-Bubble { /* non-tail messages */
         color: white; 
         background: #0B93F6;
         align-self: flex-end;
         padding: 4px 10px 4px 10px;
+        margin: 0px 0px 3px 0px;
             
     }
 
-    .Grey-Bubble {
+    .Blue-Bubble-Sent { /* with-tail messages */
+        color: white; 
+        background: #0B93F6;
+        align-self: flex-end;
+        padding: 4px 12px 4px 10px;
+        margin: 0px 0px 10px 0px;
+            
+    }
+
+    .Grey-Bubble { /* non-tail messages */
         background: #E5E5EA;
         color: black;
         align-self: flex-start;
         padding: 4px 10px 4px 10px;
+        margin: 0px 0px 3px 0px;
+    }
+
+    .Grey-Bubble-Sent { /* with-tail messages */
+        background: #E5E5EA;
+        color: black;
+        align-self: flex-start;
+        padding: 4px 12px 4px 12px;
+        margin: 0px 0px 10px 0px;
     }
 
     .Convo-Section {
-	    max-width: 325px;
-	    margin: 50px auto;
+	    max-width: 300px;
+	    margin: 5px auto 5px auto;
         display: flex;
         flex-direction: column;
     }
 
     .Head-Section {
-        
+        max-width: 300px;
+	    margin: 50px auto 10px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .Page-Container {
-
-       /* max-width: 50%;
-        margin: 50px auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center; */
+        padding: 0% 33%;
     }
 /***********/
 
@@ -117,33 +137,86 @@
         height: 25px;
     }
 
-    .Blue-Bubble::before {
+    .Blue-Bubble-Sent:nth-of-type(1)::before {
         right: -7px;
         width: 20px;
         background-color: #0B93F6;
         border-bottom-left-radius: 16px 14px;
+        z-index: -2;
     }
     
-    .Blue-Bubble::after {
+    .Blue-Bubble-Sent:nth-of-type(1)::after {
         right: -26px;
         width: 26px;
         background-color: white;
         border-bottom-left-radius: 10px;
     }
 
-    .Grey-Bubble::before {
+    .Blue-Bubble-Sent:nth-of-type(5)::before {
+        right: -7px;
+        height: 12px;
+        width: 20px;
+        background-color: #0B93F6;
+        border-bottom-left-radius: 24px 16px;
+        z-index: -2;
+    }
+    
+    .Blue-Bubble-Sent:nth-of-type(5)::after {
+        right: -26px;
+        width: 26px;
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        z-index: -2;
+    }
+
+    .Blue-Bubble-Sent:nth-of-type(8)::before {
+        right: -7px;
+        height: 12px;
+        width: 20px;
+        background-color: #0B93F6;
+        border-bottom-left-radius: 24px 16px;
+        z-index: -2;
+    }
+    
+    .Blue-Bubble-Sent:nth-of-type(8)::after {
+        right: -26px;
+        width: 26px;
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        z-index: -2;
+    }
+
+    .Grey-Bubble-Sent::before {
         left: -7px;
         width: 20px;
         background-color: #E5E5EA;
         border-bottom-right-radius: 16px 14px;
+        z-index: -2;
     }
 
-    .Grey-Bubble::after {
+    .Grey-Bubble-Sent::after {
         left: -26px;
         width: 26px;
         background-color: white;
         border-bottom-right-radius: 10px;
-}
+    }
+
+    .Grey-Bubble-Sent:nth-of-type(2)::before {
+        left: -7px;
+        height:12px;
+        width: 20px;
+        background-color: #E5E5EA;
+        border-bottom-right-radius: 16px 14px;
+        z-index: -2;
+    }
+
+    .Grey-Bubble-Sent:nth-of-type(2)::after {
+        left: -26px;
+        width: 26px;
+        background-color: white;
+        border-bottom-right-radius: 10px;
+    }
+
 
 
 
