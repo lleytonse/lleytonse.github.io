@@ -30,14 +30,37 @@
 /***********/
 
 /*** NATIVE STYLES ***/
-    body {
-        font-family: 'SF-Pro-Text-Regular', 'Helvetica', 'Arial', sans-serif;
-        color: rgb(1, 0, 0);
-        font-size: 12px;
+    a {
+
+        text-decoration: none;
+
+        max-width: 210px;
+        word-wrap: break-word;
+        margin-bottom: 6px;
+        line-height: 18px;
+        position: relative;
+	    padding: 0px;
+        border-radius: 17px;
+        
     }
 
     b {
         font-family: 'SF-Pro-Text-Bold', 'Helvetica', 'Arial', sans-serif;
+    }
+
+    body {
+        font-family: 'SF-Pro-Text-Regular', 'Helvetica', 'Arial', sans-serif;
+        color: rgb(1, 0, 0);
+        font-size: 12px;
+        margin: 0;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        resize: vertical;
+        overflow: auto;
+      
     }
 
     h1 {
@@ -54,9 +77,9 @@
         position: relative;
 	    padding: 0px;
         border-radius: 17px;
-
-
     }
+
+
 /***********/
 
 
@@ -118,19 +141,32 @@
 
     .Head-Section {
         max-width: 300px;
-	    margin: 50px auto 10px auto;
+	    margin: 0px auto 10px auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .Page-Container {
+        margin: 5vh;
+
+        /*
+        //PLEASE UNCOMMENT AFTER JS 
         padding: 0% 33%;
+        margin-top: 12vh;
+        */
     }
 /***********/
 
 /*** PSEUDO-CLASSES (:) ***/
     p::before, p::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 25px;
+    }
+
+    a::before, a::after {
         content: "";
         position: absolute;
         bottom: 0;
@@ -152,7 +188,7 @@
         border-bottom-left-radius: 10px;
     }
 
-    .Blue-Bubble-Sent:nth-of-type(5)::before {
+    .Blue-Bubble-Sent:nth-of-type(3)::before {
         right: -7px;
         height: 12px;
         width: 20px;
@@ -161,7 +197,7 @@
         z-index: -2;
     }
     
-    .Blue-Bubble-Sent:nth-of-type(5)::after {
+    .Blue-Bubble-Sent:nth-of-type(3)::after {
         right: -26px;
         width: 26px;
         background-color: white;
