@@ -186,6 +186,7 @@
 
     .Page-Container {
         margin: 5vh;
+        display: block;
         
 
         /*
@@ -194,6 +195,82 @@
         margin-top: 12vh;
         */
     }
+
+    li.active {
+        color: #b7e1ff;
+        background-color: #76bff3;
+        transition: all 250ms ease-in-out;
+        z-index: 2;
+    }
+
+
+    li.active:nth-of-type(3)::after {
+        right: -26px;
+        width: 26px;
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        z-index: 1;
+    }
+
+    li.active:nth-of-type(3)::before {
+        right: -7px;
+        height: 12px;
+        width: 20px;
+        background-color: #76bff3;
+        border-bottom-left-radius: 24px 16px;
+        transition: all 250ms ease-in-out;
+        
+        z-index: -2;
+        
+    }
+
+    .item {
+        display: none;
+        flex-direction: column;
+        
+        
+        
+        position: absolute;
+        right: 0;
+        top: 20vh;
+        max-width: 50vw;
+        padding-right: 5%;
+        margin: 15px;
+    }
+
+    .about, .resume, .portfolio, .home {
+        animation: fadeIn ease 3s;
+        -webkit-animation: fadeIn ease 3s;
+        -moz-animation: fadeIn ease 3s;
+        -o-animation: fadeIn ease 3s;
+        -ms-animation: fadeIn ease 3s;
+        
+      }
+      
+      @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-moz-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-webkit-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-o-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
+      
+      @-ms-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+      }
 /***********/
 
 /*** PSEUDO-CLASSES (:) ***/
@@ -240,7 +317,7 @@
         border-bottom-left-radius: 24px 16px;
         z-index: -2;
     }
-    
+
     .Blue-Bubble-Sent:nth-of-type(3)::after {
         right: -26px;
         width: 26px;
@@ -301,7 +378,6 @@
         background-color: white;
         border-bottom-right-radius: 10px;
     }
-
 
    
 /***********/
