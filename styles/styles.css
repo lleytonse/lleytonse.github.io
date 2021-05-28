@@ -87,6 +87,25 @@
       100% {opacity:0;}
     }
 
+    @keyframes backgroundGradient {
+        0% {background:linear-gradient(90deg,#fff,#fff)}
+        50% {background:linear-gradient(90deg,#fff,#f4f6f9)}
+        to
+        {background:linear-gradient(90deg,#fff,65%,#f4f6f9,#f4f6f9 80%)}
+    }
+        
+    @-webkit-keyframes hue {
+        0%{-webkit-filter:hue-rotate(0deg)}
+        to
+        {-webkit-filter:hue-rotate(-1turn)}
+    }
+    
+    @keyframes hue {
+        0%{-webkit-filter:hue-rotate(0deg)}
+        to
+        {-webkit-filter:hue-rotate(-1turn)}
+    }
+
 /***********/
 
 /*** NATIVE STYLES ***/
@@ -206,6 +225,9 @@
 
     .body_copy {
         font-size: 14px;
+        line-height: 20px;
+        text-align: justify;
+        text-justify: inter-word;
     }
 
     .Blue-Bubble { /* non-tail messages */
@@ -253,12 +275,25 @@
         font-family: 'Apple-Color-Emoji', 'Helvetica', 'Arial', sans-serif;
     }
 
+
     .Head-Section {
         max-width: 300px;
 	    margin: 0px auto 10px auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .link {
+        background-image: linear-gradient(
+                        60deg, 
+                        rgba(239,0,143,.5),rgba(110,195,244,.5),
+                        rgba(112,56,255,.5),rgba(255,186,39,.5));
+        background-size: 400% 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: hue 5s infinite alternate;
+        border-radius: 0px;
     }
 
     .Page-Container {
