@@ -229,7 +229,7 @@
     #move-about-photo {
         position: absolute;
         top: -25vh;
-        left: -20vw;
+        left: -14vw;
         
     }
 
@@ -589,30 +589,25 @@ span {
     height: 25vw;
     margin: auto;
     margin-top: 12.5vh;
-    border: 1px solid #acacac;
-    border-radius: 6px;
-    box-shadow: 0px 0px 15px 0px #acacac;
+    border: 1px solid rgba(172, 172, 172, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px -10px #acacac;
     max-width: 50vw;
     overflow: scroll;
 }
   
 .titlebar {
-    background: -webkit-gradient-(linear, left top, left bottom, color-stop(0.0, #ebebeb, color-stop(1.0, #d5d5d5)));
-    background: -webkit-linear-gradient(top, #ebebeb, #d5d5d5);
-    background: -moz-linear-gradient(top, #ebebeb, #d5d5d5);
-    background: -ms-linear-gradient(top, #ebebeb, #d5d5d5);
-    background: -o-linear-gradient(top, #ebebeb, #d5d5d5);
-    background: linear-gradient(top, #ebebeb, #d5d5d5);
+    background: rgb(238, 238, 238);
     color: #4d494d;
     font-size: 9pt;
     line-height: 20px;
     text-align: center;
     width: 40%;
-    height: 20px;
+    height: 25px;
     border-top: 1px solid #f3f1f3;
-    border-bottom: 1px solid #b1aeb1;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-bottom: 1px solid rgba(172, 172, 172, 0.5);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -624,7 +619,7 @@ span {
   
 .buttons {
     padding-left: 8px;
-    padding-top: 3px;
+    padding-top: 6px;
     float: left;
     line-height: 0px;
 }
@@ -648,7 +643,7 @@ span {
     border: 1px solid #b03537;
 }
   
-.close:active .closebutton {
+.close:active .closebutton, .close:hover, .closebutton:hover {
     color: #4e0002;
 }
   
@@ -675,7 +670,7 @@ span {
     border: 1px solid #af7c33;
 }
   
-.minimize:active .minimizebutton {
+.minimize:active .minimizebutton, .minimize:hover, .minimizebutton:hover {
     color: #5a2607;
 }
   
@@ -689,7 +684,7 @@ span {
     background: #00ca56;
     font-size: 9pt;
     line-height: 11px;
-    margin-left: 6px;
+    margin-left: 4px;
     width: 11px;
     height: 11px;
     border: 1px solid #14ae46;
@@ -702,7 +697,7 @@ span {
     border: 1px solid #128435;
 }
   
-.zoom:active .zoombutton {
+.zoom:active .zoombutton .zoom:hover, .zoombutton:hover{
     color: #003107;
 }
   
@@ -717,6 +712,11 @@ span {
     padding-top: 7vh;
     overflow: hidden;
 
+}
+
+.title-style {
+    padding-top: 3px;
+    padding-right: 10%;
 }
   
   /* window END */
