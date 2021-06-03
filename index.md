@@ -14,8 +14,7 @@
         
         <!-- Resources -->
         <link rel="stylesheet" href="styles/styles.css">
-        <link rel="icon" type="image/png" href="images/icon.svg">
-        
+        <link rel="icon" type="image/png" href="images/icon.svg">  
     </head>
     
     <body>
