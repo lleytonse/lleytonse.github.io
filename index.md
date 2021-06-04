@@ -14,7 +14,8 @@
         
         <!-- Resources -->
         <link rel="stylesheet" href="styles/styles.css">
-        <link rel="icon" type="image/png" href="images/icon.svg">  
+        <link rel="icon" type="image/png" href="images/memoji.png">
+        
     </head>
     
     <body>
@@ -24,8 +25,7 @@
             <div class="Head-Section">
                 
                 <div class="homehead" data-li="home">
-                    <img id="Icon" src="images/icon.svg" alt="'Replace with image'"></img>
-                    
+                    <img id="Icon" src="images/memoji.png" alt="Lleyton Seymour"></img>
                 </div>
 
                 <!--<a class="contact"> contact@lleytonseymour.com</a>-->
