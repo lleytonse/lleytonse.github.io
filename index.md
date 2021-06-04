@@ -64,7 +64,7 @@
                     This website is a work in progress
                 </p>
 
-                <p class="Grey-Bubble-Sent emoji">
+                <p class="Grey-Bubble-Sent">
                     &quot;please excuse our appearance while we're under construction&quot; 🔨🔧
                     
                 </p>
@@ -212,7 +212,7 @@
                               <!-- window title -->
                             </div>
                             <div class="content-window">
-                                <h2>Still Updating! srry 😔</h2>
+                                <h2 contenteditable="true">Still Updating! srry 😔</h2>
                                 <div class="item_info body_copy">
                                 
                                    <!-- My name is Lleyton Seymour, an Australian-born American-based 
@@ -259,7 +259,7 @@
                                   <!-- window title -->
                                 </div>
                                 <div class="content-window">
-                                    <h2>Still Updating! srry 😔</h2>
+                                    <h2 contenteditable="true">Still Updating! srry 😔</h2>
                                     <div class="item_info body_copy">
                                     
                                        <!-- My name is Lleyton Seymour, an Australian-born American-based 
