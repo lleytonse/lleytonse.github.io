@@ -10,7 +10,8 @@
 /*** FONTS ***/
     @font-face {
         font-family: 'SF-Pro-Text-Regular';
-        src: url('../resources/SF-Pro-Text-Regular.otf');
+        src: url('../resources/SF-Pro-Text-Regular.otf'),
+             url('location/of/font.svg#webfont') format('svg');
     }
 
     @font-face {
@@ -216,7 +217,7 @@
     }
 
     #Icon {
-        width: 80px;
+        width: 100px;
     }
 
     #move-about-bio {
@@ -325,6 +326,7 @@
                         rgba(239,0,143,.5),rgba(110,195,244,.5),
                         rgba(112,56,255,.5),rgba(255,186,39,.5));
         background-size: 400% 100%;
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: hue 5s infinite alternate;
