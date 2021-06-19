@@ -553,7 +553,7 @@
             <!-- Temporary Mobile Redirect -->
             <script type="text/javascript">
                 
-                if ($(window).width() < 960) {
+                if ($(window).width() < 640) {
                     window.location.href = "404.html";
                 }
                 else {
