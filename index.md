@@ -550,6 +550,18 @@
                 }
             </script>
 
+            <!-- Temporary Mobile Redirect -->
+            <script type="text/javascript">
+                
+                if ($(window).width() < 960) {
+                    window.location.href = "404.html";
+                }
+                else {
+                   console.log("contact@lleytonseymour.com if you have any questions");
+                }
+                
+            </script>
+
             <!-- next Function -->
 
     </body>
