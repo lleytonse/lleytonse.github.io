@@ -554,8 +554,10 @@
             <script type="text/javascript">
                 
                 //if (($(window).width() < 640) || (navigator.userAgent.match(/iPhone/i))) {
-                if ($(window).width() < 640) {
-                    window.location.href = "404.md";
+                if( /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ 
+                //if ($(window).width() < 640) {
+                    window.location.href = "404.html";
                 }
                 else {
                    console.log("contact@lleytonseymour.com if you have any questions");
