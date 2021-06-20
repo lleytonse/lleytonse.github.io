@@ -175,6 +175,14 @@
 
     html {
         font-family: 'Apple-Color-Emoji', 'Helvetica', 'Arial', sans-serif;
+        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
     }
 
     p {
