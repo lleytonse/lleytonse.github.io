@@ -151,6 +151,7 @@
     }
 
     h2 {
+        display: inline-block;
         font-size: 28px;
         margin: 0px;
     }
@@ -178,11 +179,6 @@
         overflow: scroll;
         overflow-x: hidden;
         overflow-y: hidden;
-    }
-
-    ::-webkit-scrollbar {
-        width: 0;  /* Remove scrollbar space */
-        background: transparent;  /* Optional: just make scrollbar invisible */
     }
 
     p {
@@ -316,7 +312,7 @@
         flex-direction: column;
     }
 
-    /*
+    /* File too large for hosting
     .emoji {
         font-family: 'Apple-Color-Emoji', 'Helvetica', 'Arial', sans-serif;
     }
@@ -751,6 +747,12 @@
     .title-style {
         padding-top: 3px;
         padding-right: 10%;
+    }
+
+    /* Scrollbar fix for Windows Default */
+    ::-webkit-scrollbar {
+        width: 0;
+        background: transparent; 
     }
 
 /***********/
