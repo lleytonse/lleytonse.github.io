@@ -38,6 +38,8 @@
 /***********/
 
 /*** ANIMATIONS ***/
+
+    /*** TRANSITIONS ***/
     @keyframes fadeIn {
         0% {opacity:0;}
         100% {opacity:1;}
@@ -64,30 +66,31 @@
     }
 
     @keyframes fadeOut {
-      0% {opacity:1;}
-      100% {opacity:0;}
+        0% {opacity:1;}
+        100% {opacity:0;}
     }
     
     @-moz-keyframes fadeOut {
-      0% {opacity:1;}
-      100% {opacity:0;}
+        0% {opacity:1;}
+        100% {opacity:0;}
     }
     
     @-webkit-keyframes fadeOut {
-      0% {opacity:1;}
-      100% {opacity:0;}
+        0% {opacity:1;}
+        100% {opacity:0;}
     }
     
     @-o-keyframes fadeOut {
-      0% {opacity:1;}
-      100% {opacity:0;}
+        0% {opacity:1;}
+        100% {opacity:0;}
     }
     
     @-ms-keyframes fadeOut {
-      0% {opacity:1;}
-      100% {opacity:0;}
+        0% {opacity:1;}
+        100% {opacity:0;}
     }
 
+    /*** CONTACT ME LINK ***/
     @keyframes backgroundGradient {
         0% {background:linear-gradient(90deg,#fff,#fff)}
         50% {background:linear-gradient(90deg,#fff,#f4f6f9)}
@@ -106,6 +109,21 @@
         to
         {-webkit-filter:hue-rotate(-1turn)}
     }
+
+    /*** ON-LOAD ***/
+
+    @keyframes load-head-move {
+        0% {transform: translateY(25vh);}
+        50% {transform: translateY(25vh);}
+        100% {transform: translateY(0vh);}
+    }
+
+    @keyframes load-head-fade {
+        0% {opacity:0;}
+        50% {opacity:0;}
+        100% {opacity:1;}
+    }
+
 
 /***********/
 
@@ -219,10 +237,12 @@
 /*** ID (#) ***/
     #Time { 
         color: rgb(142, 142, 147);
+        animation: load-head-fade 7s ease-in-out
     }
 
     #Icon {
         width: 100px;
+        animation: fadeIn 2s ease-in-out, load-head-move 4s ease-in-out;
     }
 
     #move-about-bio {
@@ -258,6 +278,14 @@
         top: -5vh;
         left: -90vh;
         
+    }
+
+    #load-home {
+        animation: fadeIn 2s ease-in-out, load-head-move 4s ease-in-out;
+    }
+
+    #temp-fade {
+        animation: load-head-fade 7s ease-in-out
     }
 
 /***********/
@@ -325,6 +353,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+
     }
 
     .link {
