@@ -16,6 +16,7 @@ function updateClock() {
     
     if(hours==0) { //exception case for 12:00 AM
         hours=12;
+        mid='PM';
     }
     else if(hours>12){
         hours=hours%12;
