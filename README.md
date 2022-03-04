@@ -14,6 +14,9 @@
 
 My personal website (soon-to-be) hosted on [github pages](https://pages.github.com/).
 
+## Possible Additions
+- Click focus on sub menu windows (to make viewing easier instead of having to click 'x' every time)
+
 ## Style Guide
 ### Colors
 | Color          | Hex                                                                |
