@@ -18,7 +18,7 @@ function updateClock() {
         hours=12;
         mid='PM';
     }
-    else if(hours>12){
+    else if(hours>=12){
         hours=hours%12;
         mid='PM';
     }
