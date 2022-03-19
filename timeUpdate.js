@@ -14,13 +14,19 @@ function updateClock() {
     var mins = addZero(date.getMinutes());
     var mid='AM';
     
-    if(hours==0 || hours==12) { //exception case for 12:00 AM
+    if(hours==0) { //exception case for 12:00 AM
         hours=12;
-        mid='PM';
+        mid='AM';
     }
-    else if(hours>12){
-        hours=hours%12;
-        mid='PM';
+    else if(hours>=12) {
+        if(hours==12){ //exception case for 12:00 PM
+            hours=12;
+            mid='PM'
+        }
+        else {
+            hours=hours%12;
+            mid='PM';
+        }   
     }
    
         //formatting string for display
